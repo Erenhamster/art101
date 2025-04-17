@@ -4,9 +4,9 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #090a33;
-    background-color: #e1e1ff;
-    font-family: "Lucida Sans Unicode";
+    border: solid 1px #ffffff;
+    background-color: #ffffff;
+    font-family: "Courier New";
   }
   h1, h2, h3 {
     font-family: "Courier New";
@@ -16,9 +16,9 @@
   .intro {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 5px #090a33;
+    border: solid 3px #ffffff;
     font-family: "Courier New";
     color: black;
     display: inline-flexbox;
-    background-color: #e1e1ff;
+    background-color: #ffffff;
   }
