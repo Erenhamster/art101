@@ -1,21 +1,27 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Lab 5
+// Author: Leslie Hernandez-Nava
+// Date: 04/23/2025
 
-// Constants
+// Declare variables to hold make, model, color and year of your vehicle, example var year =2004
+let make = "Ford";
+let model = "Taurus";
+let color = "Rusty";
+let year = "2004";
 
-// Functions
+// Declare a variable to hold the current year, example var currentYear = 2025
+let currentYear = 2025;
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+//Declare a boolean variable ownIt for whether you own it or not
+let ownIt = false;
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+//Once you declare them, reference them and see them printed out in the console
+//Create a new variable age that subtracts the year from the current year
+let age = currentYear - year;
 
-// let's get this party started
-main();
+//Print the variables
+document.writeln ("make: " + make + "<br>");
+document.writeln ("model: " + model + "<br>");
+document.writeln ("color: " + color + "<br>");
+document.writeln ("age: " + age + "<br>");
+document.writeln ("year: " + year + "<br>");
+
