@@ -1,37 +1,38 @@
 // index.js - Lab 8 - Anon functions and CallBacks 
 // Author: Leslie Hernandez-Nava, leerhern@ucsc.edu
-// Date: 04/28/25
+// Date: 05/06/25
 
-// Constants
+//Define the array
+let array = [1, 4, 6, 8, 10, 14];
 
-// Functions
+console.log("This is our starting array:" + array);
 
-// Variables
-
-//created named function, number array, and assigned it to a variable
+//This function multiplies input number
 function multiply(num){
-  var results = num * num 
-  return results;
+    var results = num * num
+    return results;
 }
 
-//used map on array
-let array = [1, 2, 3, 4, 5]
+console.log("These are the numbers that were multiplied:" + array.map(multiply));
 
-array.map(multiply);
-
-//used a new anonymous function
+//This anonymous function returns the array
 const multiplyByTwoPointFive = array.map(function(num){
-  return num * 2.5;
+    return num * 2.5;
 });
 
 console.log("What if we returned and multiply this number by 2.5..." + multiplyByTwoPointFive);
 
+var mapResults = "Here are the results of the lab! <br>";
 
- // Your map results data
- var mapResults = "Here are the results of the lab: ";
+$("#output").append(mapResults);
 
- // Use jQuery to select the element by its ID and set the HTML content
- $("#output").append("<br>" + "Here is the original array: " + array.join("<br>"));
- $("#output").append("<br>" + mapResults + multiplyByTwoPointFive.join("<br>"));
- $("#output").append("<br>" + "The multiplication is: " + array.map(multiply) ("<br>"));
+$("#output").append("<br>"+"Here is the original array: "+ array.join(","));
+
+$("#output").append("<br>"+"Here's the array multiplied by two point five: " + multiplyByTwoPointFive.join(","));
+
+$("#output").append("<br>"+"The numbers multiplied are: "+ array.map(multiply).join(","));
+
+
+
+
 
