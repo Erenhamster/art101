@@ -1,9 +1,17 @@
-// index.js - Lab 8 - Anon functions and CallBacks 
-// Author: Leslie Hernandez-Nava, leerhern@ucsc.edu
-// Date: 04/28/25
+/*
+   index.js - (Lab 9 - Libraries & jQuery) This simple JavaScript/jQuery script uses buttons to modify some elements on the page
 
-// Constants
+   Requirements: jQuery must be loaded for this script to work.
 
-// Functions
+   Author: Leslie Hernandez-Nava, leerhern@ucsc.edu
+   Date: 05/11/2025
+*/
 
-// Variables
+// add button to challenge section
+$("#challenge").append("<button id='button-challenge'>Make Special</button>");
+
+// add a click listener to the challenge button
+$("#button-challenge").click(function(){
+    // now add (or subtract) the "special" class to the section
+    $("#challenge").toggleClass("special");
+});

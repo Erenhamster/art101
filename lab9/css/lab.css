@@ -8,3 +8,10 @@
     background-color: #ffffff;
     font-family: 'Courier New';
   }
+
+.special {
+  background-color: lavender;
+  border: dotted 50px red;
+  color: pink;
+  font-weight: bold;
+}
