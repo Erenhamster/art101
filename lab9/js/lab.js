@@ -15,3 +15,7 @@ $("#button-challenge").click(function(){
   $("#challenge").click($(this).toggleClass("special-section"))
 });
 
+$("#my-button").click(function(){
+  let name=prompt("What's your name?");
+  $("#welcome").html("Hello, " + name + "!");
+  })
