@@ -1,0 +1,13 @@
+
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #ffffff;
+    background-color: #ffffff;
+    font-family: 'Courier New';
+  }
+
+#output {
+  border: solid 1px black;
+    min-height:100px;
+}
