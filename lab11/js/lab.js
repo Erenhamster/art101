@@ -7,17 +7,26 @@
    Date: 05/17/25
 */
 
-console.log("lol");
-//event listener for button
-$("#inputButton").click(function(){
 
-  console.log("click");
 
-//get value of input field
-let userName = $("user-name").val();
+//Sort characters of a string in alpphabetical order
+function sortString(inputString){
+//converting string to an array and back again to sort
+return inputString.split('').sort().join('');
 
-//select output div and sort them
-$("#output").append(userName);
+}
 
+function anagramString(inputString){
+  return inputString.split('').anagramString().join('');
+}
+
+//click listener for button
+$("#submit").click(function(){
+  //get value for input
+  const userName = $("#user-name").val();
+  //username sorted
+  userNameSorted = sortString(userName);
+  //append a new div for output div
+  $("#output").html('<div class="text"><p>' + userNameSorted + '</p></div>');
 });
 
