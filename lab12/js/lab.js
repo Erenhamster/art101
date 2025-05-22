@@ -16,15 +16,15 @@ housesArray = [
    },
    {
       title: "Star Wars",
-      text: "The world that revolves around the force. Be careful, who knows if the Dark Side reels you in."
+      text: "The house sorted you to the world that revolves around the force. Be careful, who knows if the Dark Side reels you in."
    },
    {
       title: "Back to the Future",
-      text: "The world that involves accidental time traveling where you meet your young parents?"
+      text: "The house sorted you to the world that involves accidental time traveling where you meet your young parents?"
    },
    {
       title: "Hogwarts",
-      text: "The world full of magic and mischiefs."
+      text: "The house sorted you to the world full of magic and mischiefs."
    }
 ]
 
