@@ -15,16 +15,16 @@ $("#button-challenge").click(function(){
   $("#challenge").click($(this).toggleClass("special-section"))
 });
 
-$("#problem").append("<button id='button-problem'>Make Special</button>");
+$("#problems").append("<button id='button-problems'>Make Special</button>");
 
-$("#button-problem").click(function(){
-  $("#problem").click($(this)).toggleClass("special-section")
+$("#button-problems").click(function(){
+  $("#problems").click($(this)).toggleClass("special-section")
 });
 
-$("#result").append("<button id='button-result'>Make Special</button>");
+$("#results").append("<button id='button-results'>Make Special</button>");
 
-$("#button-result").click(function(){
-  $("#result").click($(this)).toggleClass("special-section")
+$("#button-results").click(function(){
+  $("#results").click($(this)).toggleClass("special-section")
 });
 
 

@@ -16,4 +16,34 @@
     font-weight: bold;
   }
 
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #ffffff;
+    background-color: #ffffff;
+    font-family: 'Courier New';
+}
+
+  .special-section {
+    background-color: rgb(255, 179, 251);
+    border: dotted 50px rgb(182, 255, 255);
+    color: rgb(170, 25, 122);
+    font-weight: bold;
+  }
+
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #ffffff;
+    background-color: #ffffff;
+    font-family: 'Courier New';
+}
+
+  .special-section {
+    background-color: rgb(255, 179, 251);
+    border: dotted 50px rgb(182, 255, 255);
+    color: rgb(170, 25, 122);
+    font-weight: bold;
+  }
+
     
