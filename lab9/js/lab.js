@@ -18,13 +18,13 @@ $("#button-challenge").click(function(){
 $("#problems").append("<button id='button-problems'>Make Special</button>");
 
 $("#button-problems").click(function(){
-  $("#problems").click($(this)).toggleClass("special-section")
+  $("#problems").click($(this).toggleClass("special-section"))
 });
 
 $("#results").append("<button id='button-results'>Make Special</button>");
 
 $("#button-results").click(function(){
-  $("#results").click($(this)).toggleClass("special-section")
+  $("#results").click($(this).toggleClass("special-section"))
 });
 
 
