@@ -19,18 +19,3 @@ function main() {
 
 // let's get this party started
 main();
-
-
-
-$("#challenge, #problems, #results").append("<button id='button-challenge'>Make Special</button>");
-
-// add a click listener to the challenge button
-$("#button-challenge").click(function(){
-  $("#challenge").click($(this).toggleClass("special-section"))
-});
-
-
-$("#my-button").click(function(){
-  let name=prompt("What's your name?");
-  $("#welcome").html("Hello, " + name + "!");
-  })
