@@ -8,12 +8,25 @@
 */
 
 // add button to challenge section
-$("#challenge, #problems, #results").append("<button id='button-challenge'>Make Special</button>");
+$("#challenge").append("<button id='button-challenge'>Make Special</button>");
 
 // add a click listener to the challenge button
 $("#button-challenge").click(function(){
   $("#challenge").click($(this).toggleClass("special-section"))
 });
+
+$("#problem").append("<button id='button-problem'>Make Special</button>");
+
+$("#button-problem").click(function(){
+  $("#problem").click($(this)).toggleClass("special-section")
+});
+
+$("#result").append("<button id='button-result'>Make Special</button>");
+
+$("#button-result").click(function(){
+  $("#result").click($(this)).toggleClass("special-section")
+});
+
 
 $("#my-button").click(function(){
   let name=prompt("What's your name?");
