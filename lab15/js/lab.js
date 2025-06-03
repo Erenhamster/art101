@@ -34,7 +34,7 @@ $("#activate").click(function(){
         $("#output").append("<h1>" + imageHTML);
     }) 
     // What we do if the api call fails
-    .fail(function(jqXHR, textStatus, errorThrown) { 
+    .fail(function(XHR, textStatus, errorThrown) { 
         // do stuff
         console.log(errorThrown + "Error:" + textStatus);
     });
