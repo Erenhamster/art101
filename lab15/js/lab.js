@@ -7,50 +7,37 @@
    Date: 05/27/25
 */
 
+const ajaxObj = {
+   url: "https://yesno.wtf/api",
+    type: "GET",
+    dataType:"json"
+}
+
 $("#activate").click(function(){
     console.log("clickk");
 // Using the core $.ajax() method
-    $.ajax({
-
-    // The URL for the request (from the api docs)
-        url: "https://yesno.wtf/#api",
-
-    // The data to send (will be converted to a query string)
-     data: { 
-
-            // here is where any data required by the api 
-            //   goes (check the api docs)
-            "answer": "yes",
-            "forced": false,
-            "image": "https://yesno.wtf/assets/yes/2.gif",
-          },
-
-    // Whether this is a POST or GET request
-        type: "GET",
-
-    // The type of data we expect back
-        dataType : "json",
-
+    $.ajax(ajaxObj)
     // What do we do when the api call is successful
     //   all the action goes in here
-        success: function(data) {
+    .done(function(data) {
         // do stuff
-            console.log(data);
+        console.log("Success!");
+        console.log(data);
         //extract answer from data
-            let answer = data.answer;
+        let answer = data.answer;
         //extract image from data
-            let imgURL = data.image;
+        let imgURL = data.image
         //build image HTML
-            let imageHTML = "<img src = '" + imgURL + "'>";
+        let imageHTML = "<img src = '" + imgURL + "'>";
         //Inset the output in the output div
-            $("#output").html("<h1>" + answer);
-            $("#output").append("<h1>" + imageHTML);
-        }, 
+        $("#output").html("<h1>" + answer);
+        $("#output").append("<h1>" + imageHTML);
+    }) 
     // What we do if the api call fails
-        .fail(function(jqXHR, textStatus, errorThrown) { 
+    .fail(function(jqXHR, textStatus, errorThrown) { 
         // do stuff
-         console.log(errorThrown + "Error:" + textStatus);
-        });
-    })
+        console.log(errorThrown + "Error:" + textStatus);
+    });
+    
 
-})
+});
